@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  aiart:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aiart2
+    ports:
+      - "5001:5001" # Maps port 5001 on the host to port 5001 in the container
+    restart: always
